@@ -11,11 +11,21 @@ class MainMenuScene(Scene):
     def setup(self):
         # this method is called, when user moves to this scene
         
-        # add MT blue background color
+        #add background color
         self.background = SpriteNode(position = self.size / 2, 
-                                     color = 'white', 
+                                     color = '#383060',
                                      parent = self, 
                                      size = self.size)
+        
+        self.start_button = SpriteNode('./assets/sprites/start.png',
+                                       parent = self,
+                                       position = self.size/2)
+                                       
+        help_button_position = self.size/2
+        help_button_position.y = help_button_position.y - 200
+        self.help_button = SpriteNode('./assets/sprites/menu.png',
+                                       parent = self,
+                                       position = help_button_position)
     
     def update(self):
         # this method is called, hopefully, 60 times a second
