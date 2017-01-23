@@ -1,4 +1,5 @@
 # Created by: Mr. Coxall
+# Modified by: Victoria L
 # Created on: Sep 2016
 # Created for: ICS3U
 # This scene shows a splash screen for 2 seconds,
@@ -47,6 +48,19 @@ class SplashScene(Scene):
         pass
     
     def did_change_size(self):
+        # this method is called, when user changes the orientation of the screen
+        # thus changing the size of each dimension
+        pass
+    
+    def pause(self):
+        # this method is called, when user touches the home button
+        # save anything before app is put to background
+        pass
+    
+    def resume(self):
+        # this method is called, when user place app from background 
+        # back into use. Reload anything you might need.
+        pass
         # this method is called, when user changes the orientation of the screen
         # thus changing the size of each dimension
         pass
