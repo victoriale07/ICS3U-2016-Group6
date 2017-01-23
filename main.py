@@ -1,4 +1,5 @@
-# Created by: Victoria Le
+# Created by: Mr. Coxall
+# Modified by: Victoria L
 # Created on: Sep 2016
 # Created for: ICS3U
 # This program is the first file in a multi-scene game template
@@ -28,4 +29,4 @@ main_view = ui.View()
 scene_view = SceneView(frame = main_view.bounds, flex = 'WH')
 main_view.add_subview(scene_view)
 scene_view.scene = SplashScene()
-main_view.present(hide_title_bar = True, animated = False)
+main_view.present(hide_title_bar = True, animated = False, orientations = LANDSCAPE)
